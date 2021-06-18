@@ -1,0 +1,8 @@
+gcc -E main.c -o main.i
+gcc -E func.c -o func.o
+
+gcc -S main.c func.c
+
+gcc -c main.c func.c
+
+gcc -o main main.c func.c
